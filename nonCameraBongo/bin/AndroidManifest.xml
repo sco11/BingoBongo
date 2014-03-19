@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.noncamerabongo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="MyApp"
+
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.noncamerabongo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.noncamerabongo.EnterSheetColumn1"
+            android:label="@string/title_activity_enter_sheet_column1"
+            android:parentActivityName="com.example.noncamerabongo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.noncamerabongo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.noncamerabongo.EnterSheetColumn2"
+            android:label="@string/title_activity_enter_sheet_column2" >
+        </activity>
+        <activity
+            android:name="com.example.noncamerabongo.EnterSheetColumn3"
+            android:label="@string/title_activity_enter_sheet_column3"
+            android:parentActivityName="com.example.noncamerabongo.EnterSheetColumn2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.noncamerabongo.EnterSheetColumn2" />
+        </activity>
+        <activity
+            android:name="com.example.noncamerabongo.EnterSheetColumn4"
+            android:label="@string/title_activity_enter_sheet_column4"
+            android:parentActivityName="com.example.noncamerabongo.EnterSheetColumn3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.noncamerabongo.EnterSheetColumn3" />
+        </activity>
+        <activity
+            android:name="com.example.noncamerabongo.EnterSheetColumn5"
+            android:label="@string/title_activity_enter_sheet_column5"
+            android:parentActivityName="com.example.noncamerabongo.EnterSheetColumn4" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.noncamerabongo.EnterSheetColumn4" />
+        </activity>
+    </application>
+
+</manifest>

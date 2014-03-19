@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">nonCameraBongo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_enter_sheet_column1">EnterSheetColumn1</string>
+    <string name="title_activity_enter_sheet_column2">EnterSheetColumn2</string>
+    <string name="title_activity_enter_sheet_column3">EnterSheetColumn3</string>
+    <string name="title_activity_enter_sheet_column4">EnterSheetColumn4</string>
+    <string name="title_activity_enter_sheet_column5">EnterSheetColumn5</string>
+
+</resources>
